@@ -9,10 +9,15 @@ import newBerrImg from "../assets/new-beer.png";
 export default function Home() {
     return (
         <div className="home">
-            <link className="allBeers" to="/beers">
+            <Link className="allBeers" to="/beers">
                 <img src={beersImg} alt=""/>
                 <p>All Beers</p>
-            </link>
+            </Link>
+
+            <Link className="randomBeers" to="random-beer">
+                <img src={randomBeerImg} alt=""/>
+                <p>Random Beers</p>
+            </Link>
         </div>
     )
 }
